@@ -1,0 +1,213 @@
+/* General Footer Styling */
+.footer {
+    background-color: #222; /* Dark background */
+    color: white;
+    padding: 60px 20px; /* Increased padding for greater height */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove margin */
+  }
+  
+  /* Footer Container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure sections wrap on smaller screens */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+  }
+  
+  /* Footer Section */
+  .footer-section {
+    width: 20%; /* Each section takes up 1/5th of the width */
+    padding: 20px; /* Increased padding for more space inside sections */
+    box-sizing: border-box; /* Make sure padding does not add extra width */
+    margin-bottom: 30px; /* Increased margin between sections */
+  }
+  
+  /* Footer Section Headings */
+  .footer-section h3 {
+    font-size: 14px; /* Set heading font size to 14px */
+    font-weight: bold;
+    margin-bottom: 20px; /* Increased margin below heading */
+    color: white; /* Ensure the heading remains white */
+  }
+  
+  /* Style for non-heading text in footer (Links, paragraphs, etc.) */
+  .footer-section p, .footer-section a {
+    color: rgba(255, 255, 255, 0.6); /* Change color for text and links */
+    margin-bottom: 15px; /* Increased margin between links and text */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Set font size to 12px for text and links */
+  }
+  
+  .footer-section a:hover {
+    color: #fff; /* Change color to full white when hovered */
+  }
+  
+  /* Footer Section Links */
+  .footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0; /* Remove extra margin from the list */
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 12px; /* Increased space between list items */
+  }
+  
+  /* Social Media Icons */
+  .footer .footer-section .social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Increased margin above social media icons */
+  }
+  
+  .footer .footer-section .social-links li {
+    display: inline-block;
+    margin-right: 20px; /* Increased spacing between social media icons */
+  }
+  
+  .footer .footer-section .social-links a {
+    color: rgba(255, 255, 255, 0.6); /* Social media icon color */
+    text-decoration: none;
+    font-size: 25px; /* Increased font size for the icons */
+  }
+  
+  .footer .footer-section .social-links a:hover {
+    color: #fff; /* Change color to full white on hover */
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    margin-top: 40px; /* Add space above footer bottom */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Add separator line */
+    padding-top: 20px; /* Add padding to the top of the bottom section */
+  }
+  
+  .footer-line {
+    margin: 0; /* Remove default margin for the line */
+    border: none;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
+  }
+  
+  /* Footer Bottom Text */
+  .footer-bottom-text {
+    display: flex;
+    justify-content: space-between; /* Distribute text across */
+    font-size: 12px; /* Set font size for bottom text */
+    color: rgba(255, 255, 255, 0.6); /* Make text color lighter */
+  }
+  
+  /* Align the left part (Copyright and Pakistan info) */
+  .footer-bottom-text .left {
+    display: flex;
+    align-items: center; /* Align them vertically */
+  }
+  
+  .footer-bottom-text .left span {
+    margin-right: 10px; /* Add some gap between the two parts */
+  }
+  
+  /* Align the right part (User Agreement links) */
+  .footer-bottom-text .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 60px; /* Add left margin to push the content to the right */
+  }
+  
+  /* Left Text Styles */
+  .footer-bottom-text .left span:first-child {
+    font-size: 16px; /* Set font size of "Pakistan (English / PKR)" to 16px */
+  }
+  
+  /* Links Styles */
+  .footer-bottom-text .left a, .footer-bottom-text .right a {
+    color: rgba(255, 255, 255, 0.6); /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer-bottom-text .left a:hover, .footer-bottom-text .right a:hover {
+    color: #fff; /* White color on hover */
+  }
+  
+  /* Footer Right Links */
+  .footer-right-links {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6); /* Light color for links */
+  }
+  
+  .footer-right-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6); /* Set link color */
+    margin-right: 10px; /* Spacing between the links */
+  }
+  
+  .footer-right-links a:hover {
+    color: #fff; /* Full white color on hover */
+  }
+  
+  /* Make footer sections responsive */
+  @media (max-width: 768px) {
+    .footer-section {
+        width: 48%; /* Two sections per row on small screens */
+    }
+  
+    .footer .footer-section.social-media ul li {
+        display: inline-block;
+        margin-bottom: 10px; /* Add spacing between social media links */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section {
+        width: 100%; /* Full width for each section on extra small screens */
+    }
+  
+    .footer .footer-section.social-media ul li {
+        margin-bottom: 10px; /* Ensure good spacing for smaller screens */
+    }
+  }
+  
+  /* Add section-padding above the footer */
+  .section-padding {
+    padding-top: 100px; /* Add top padding for 100px gap above the footer */
+    padding-bottom: 0; /* Remove any bottom padding */
+    margin: 0; /* Ensure no extra margin */
+  }
+  
+  /* Footer Bottom Styling */
+  .footer-bottom-text {
+    display: flex;
+    justify-content: flex-start; /* Align the content to the left */
+    align-items: center; /* Align text vertically */
+    font-size: 12px;
+    margin-left: 60px; /* Move the entire line to the right */
+  }
+  
+  .footer-bottom-text span {
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+  }
+  
+  .footer-bottom-text span:hover {
+    color: #fff;
+  }
+
+  .left{
+    cursor: pointer;
+  }
+
+  .right{
+    color: #6a6a6a;
+    position: relative;
+    left: 320px;
+  }
+  
+  .footer-bottom-text .right a {
+    color: rgba(255, 255, 255, 0.6); 
+  }
+  
+  .footer-bottom-text .right a:hover {
+    color: #fff;
+  }

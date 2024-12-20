@@ -1,0 +1,110 @@
+.smartphone-section {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .smartphone-price {
+   position: relative;
+   top: 60px; 
+   font-weight: bold;
+  }
+  
+
+  .smartphone-item {
+    position: relative; /* This allows positioning the 'New' tag above the image */
+  }
+  
+  .new-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #21B9D3; /* Tag color */
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  
+  
+  .smartphone-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .smartphone-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%; /* Two items per row */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .smartphone-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .text-side {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .image-side {
+    flex: 1;
+  }
+  
+  .smartphone-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .smartphone-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .smartphone-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .smartphone-item {
+      width: 100%; /* One item per row on mobile */
+    }
+  
+    .text-side {
+      padding-right: 0;
+    }
+  
+    .image-side {
+      margin-top: 20px;
+    }
+  }
+  
